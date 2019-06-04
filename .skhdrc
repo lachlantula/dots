@@ -135,12 +135,12 @@ cmd + alt - w : chunkc tiling::desktop --annihilate
 cmd + alt - x : chunkc tiling::desktop --focus $(chunkc get _last_active_desktop)
 cmd + alt - z : chunkc tiling::desktop --focus prev
 cmd + alt - c : chunkc tiling::desktop --focus next
-cmd + alt - 1 : chunkc tiling::desktop --focus 1
-cmd + alt - 2 : chunkc tiling::desktop --focus 2
-cmd + alt - 3 : chunkc tiling::desktop --focus 3
-cmd + alt - 4 : chunkc tiling::desktop --focus 4
-cmd + alt - 5 : chunkc tiling::desktop --focus 5
-cmd + alt - 6 : chunkc tiling::desktop --focus 6
+alt - 1 : chunkc tiling::desktop --focus 1
+alt - 2 : chunkc tiling::desktop --focus 2
+alt - 3 : chunkc tiling::desktop --focus 3
+alt - 4 : chunkc tiling::desktop --focus 4
+alt - 5 : chunkc tiling::desktop --focus 5
+alt - 6 : chunkc tiling::desktop --focus 6
 # cmd + alt - 7 : chunkc tiling::desktop --focus 7
 
 # send window to desktop
@@ -229,7 +229,8 @@ alt - q : chunkc tiling::window --toggle fade
 
 # float / unfloat window and center on screen
 alt - t : chunkc tiling::window --toggle float;\
-          chunkc tiling::window --grid-layout 4:4:1:1:2:2
+          chunkc tiling::window --grid-layout 4:4:1:1:2:2;\
+          chunkc tiling::window --toggle sticky
 
 # toggle sticky
 alt - s : chunkc tiling::window --toggle sticky
